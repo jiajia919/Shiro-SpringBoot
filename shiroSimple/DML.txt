@@ -1,0 +1,2 @@
+INSERT INTO `shiro`.`user` (`id`, `username`, `password`, `role`) VALUES (1, 'howie', '123456', 1);
+INSERT INTO `shiro`.`user` (`id`, `username`) VALUES (2, 'swit');

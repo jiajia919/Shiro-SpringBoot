@@ -23,12 +23,20 @@ import java.util.Set;
  */
 @Component
 public class CustomRealm extends AuthorizingRealm {
-    private final UserMapper userMapper;
 
-    @Autowired
-    public CustomRealm(UserMapper userMapper) {
-        this.userMapper = userMapper;
-    }
+	// 2种注入userMapper方式
+
+// 1.
+//	private final UserMapper userMapper;
+//
+//    @Autowired
+//    public CustomRealm(UserMapper userMapper) {
+//        this.userMapper = userMapper;
+//    }
+
+// 2.
+	@Autowired
+	private UserMapper userMapper;
 
     /**
      * 获取身份验证信息
